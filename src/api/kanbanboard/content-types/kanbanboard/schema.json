@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kanbanboards",
+  "info": {
+    "singularName": "kanbanboard",
+    "pluralName": "kanbanboards",
+    "displayName": "Kanbanboard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "todoTask": {
+      "type": "boolean"
+    },
+    "InProgress": {
+      "type": "boolean"
+    },
+    "Completed": {
+      "type": "boolean"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "kanbanboards"
+    }
+  }
+}
