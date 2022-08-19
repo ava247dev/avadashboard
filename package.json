@@ -14,7 +14,6 @@
     "@strapi/plugin-users-permissions": "4.3.4",
     "@strapi/provider-upload-cloudinary": "^4.3.4",
     "@strapi/strapi": "4.3.4",
-    "better-sqlite3": "7.4.6",
     "mysql": "^2.18.1",
     "strapi-plugin-transformer": "^2.0.2"
   },
